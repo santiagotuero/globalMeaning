@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Form, Container } from "react-bootstrap";
 
-const TenantForm = () => {
+const TenantForm = ({ visible }) => {
   return (
     <Container>
-      <Form>
+      <Form hidden={!visible}>
         <Form.Group controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control
