@@ -3,10 +3,10 @@ import { Button, Container } from "react-bootstrap";
 import tenantLogo from "../../assets/img/tenantLogo.png";
 import TableList from "../TableList";
 import TabsList from "../TabsList";
+import TenantForm from "../TenantForm";
 
 const Home = () => {
   
-
   return (
     <div>
       <Container className="title-logo">
@@ -17,6 +17,7 @@ const Home = () => {
         <Button variant="secondary">
           Add Tenant
         </Button>
+        <TenantForm />
         <TabsList />
         <TableList />
       </Container>
