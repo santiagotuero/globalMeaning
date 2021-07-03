@@ -1,0 +1,20 @@
+.btn-secondary,
+.btn-primary {
+  margin: 5px 0 20px;
+}
+
+.tenant-logo {
+  height: 56px;
+  width: 56px;
+  margin-left: 8px;
+}
+
+.tenants-title {
+  display: inline;
+}
+
+.title-logo {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
