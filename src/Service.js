@@ -7,7 +7,7 @@ function randomDate() {
   const end = 1609416000000;
   const date = new Date(+start + Math.random() * (end - start));
   date.setHours(0);
-  return date.toISOString();
+  return date.toLocaleDateString();
 }
 
 let tenants = [
