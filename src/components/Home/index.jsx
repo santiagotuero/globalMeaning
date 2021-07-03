@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import TableList from "../TableList";
 import TabsList from "../TabsList";
 import TenantForm from "../TenantForm";
+import { Service } from "../../Service";
 import { Button, Container } from "react-bootstrap";
 import tenantLogo from "../../assets/img/tenantLogo.png";
-import { Service } from "../../Service";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,11 +27,12 @@ const Home = () => {
           {isVisible ? "Close" : "Add Tenant"}
         </Button>
       </Container>
-      <TenantForm visible={isVisible} />
+      <TenantForm visible={isVisible} tenants={tenants} setTenants={setTenants}/>
       <TabsList />
-      <TableList tenants={tenants} setTenants={setTenants} />
+      <TableList tenants={tenants} setTenants={setTenants}/>
     </div>
   );
 };
 
 export default Home;
+
